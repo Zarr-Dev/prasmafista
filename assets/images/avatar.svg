@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Foto profil contoh">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3a8"/><stop offset="1" stop-color="#f9d70b"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#g)"/>
+<circle cx="200" cy="155" r="68" fill="#6b2d12" opacity=".85"/>
+<path d="M60 400 C60 290 130 250 200 250 C270 250 340 290 340 400 Z" fill="#6b2d12" opacity=".85"/>
+</svg>

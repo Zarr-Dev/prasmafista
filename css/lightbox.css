@@ -1,0 +1,90 @@
+/* =========================================================
+   LIGHTBOX — pratinjau foto dokumentasi (js/lightbox.js)
+   ========================================================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: clamp(6px, 2vw, 20px);
+  padding: clamp(12px, 3vw, 32px);
+  background: rgba(10, 25, 19, 0.94);
+}
+
+.lightbox.is-open {
+  display: grid;
+  animation: lightbox-in 0.25s ease;
+}
+
+html.has-lightbox,
+html.has-lightbox body {
+  overflow: hidden;
+}
+
+.lightbox__figure {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.lightbox__figure img {
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  background: #fff;
+  border: 3px solid var(--gold);
+  border-radius: 10px;
+}
+
+.lightbox__btn {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--ink);
+  background: var(--gold);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s var(--ease);
+}
+
+.lightbox__btn:hover {
+  transform: scale(1.1);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+@keyframes lightbox-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (max-width: 560px) {
+  .lightbox {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    align-content: center;
+  }
+
+  .lightbox__nav {
+    position: absolute;
+    bottom: 18px;
+  }
+
+  .lightbox__nav--prev { left: calc(50% - 60px); }
+  .lightbox__nav--next { left: calc(50% + 12px); }
+}
