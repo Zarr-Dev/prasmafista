@@ -64,7 +64,7 @@
     try {
       await Promise.race([
         Promise.all([
-          document.fonts && document.fonts.load ? Promise.race([document.fonts.load('700 32px "Architects Daughter"'), wait(900)]).catch(function () {}) : Promise.resolve(),
+          document.fonts && document.fonts.load ? Promise.race([document.fonts.load('700 32px "Grandstander"'), wait(900)]).catch(function () {}) : Promise.resolve(),
           logo.decode ? logo.decode().catch(function () {}) : Promise.resolve()
         ]),
         skipPromise
