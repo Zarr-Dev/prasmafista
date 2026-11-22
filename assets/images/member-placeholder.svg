@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Slot foto anggota Pramuka">
-  <circle cx="48" cy="48" r="47" fill="#f2ecdd"/>
-  <circle cx="48" cy="35" r="15" fill="#9aab9d"/>
-  <path d="M19 82c2-17 13-27 29-27s27 10 29 27" fill="#9aab9d"/>
-  <circle cx="48" cy="48" r="45.5" fill="none" stroke="#d8c18a" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" role="img" aria-label="Slot potret anggota Pramuka">
+  <rect x="1" y="1" width="118" height="148" rx="14" fill="#f3eedf"/>
+  <path d="M13 144c2-31 19-49 47-49s45 18 47 49" fill="#9cab91"/>
+  <path d="M34 103c7 8 16 12 26 12s19-4 26-12l13 41H21z" fill="#718c78"/>
+  <path d="M47 91h26v20c-7 7-19 7-26 0z" fill="#c58e67"/>
+  <ellipse cx="60" cy="58" rx="25" ry="31" fill="#d5a17c"/>
+  <path d="M35 58c-2-23 8-38 25-38 18 0 28 14 25 39-5-10-12-15-23-16-9 0-18 5-27 15z" fill="#4b493e"/>
+  <path d="M42 80c5 8 11 12 18 12s13-4 18-12c-4 17-12 24-18 24S46 97 42 80z" fill="#c58e67"/>
+  <path d="M47 112l13 12 13-12" fill="none" stroke="#f4e5c7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1" y="1" width="118" height="148" rx="14" fill="none" stroke="#d8c18a" stroke-width="2"/>
 </svg>
