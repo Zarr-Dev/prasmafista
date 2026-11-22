@@ -1,6 +1,8 @@
 # Foto anggota Prasmafista
 
-Slot foto pada struktur Al-Fatih dan Rasuna Said memakai gambar sementara `assets/images/member-placeholder.svg`. Bingkai foto sekarang berbentuk potret vertikal dengan sudut membulat, bukan lingkaran kecil, agar wajah dan bagian badan atas anggota dapat terlihat.
+Slot foto pada struktur Al-Fatih dan Rasuna Said hanya disediakan untuk anggota yang namanya sudah tercantum. Posisi yang belum mempunyai nama resmi tidak ditampilkan sampai datanya tersedia.
+
+Bingkai foto berbentuk potret vertikal 4:5 dengan sudut membulat, agar wajah dan badan bagian atas anggota dapat terlihat.
 
 ## Cara memasang foto
 
@@ -8,10 +10,10 @@ Slot foto pada struktur Al-Fatih dan Rasuna Said memakai gambar sementara `asset
 2. Gunakan nama file yang sama persis dengan nilai `data-photo-key` pada elemen foto di `index.html`.
 3. Ganti nilai `src` dari `assets/images/member-placeholder.svg` menjadi `assets/images/anggota/NAMA-FILE.webp`.
 4. Pilih foto potret vertikal dengan komposisi kepala hingga dada atau pinggang. Sisakan sedikit ruang di atas kepala dan jangan memotong bahu.
-5. CSS menggunakan rasio bingkai 4:5 dan `object-fit: cover`; bagian foto akan dipotong secara konsisten tanpa mengubah file sumber.
+5. CSS menggunakan rasio bingkai 4:5 dan `object-fit: cover`; foto dipotong secara konsisten tanpa mengubah file sumber.
 
-## Nama file
+## Contoh
 
-Contoh: `data-photo-key="al-fatih-pradana"` menjadi `assets/images/anggota/al-fatih-pradana.webp`.
+`data-photo-key="al-fatih-pradana"` dipasangkan dengan `assets/images/anggota/al-fatih-pradana.webp`.
 
-Setiap anggota mempunyai `data-photo-key` unik, termasuk posisi dengan nama yang belum dilengkapi. Pastikan foto hanya dipasangkan dengan nama yang benar.
+Setiap posisi anggota yang ditampilkan mempunyai `data-photo-key` unik. Pastikan foto hanya dipasangkan dengan nama yang benar dan sudah mendapat izin untuk dipublikasikan.
