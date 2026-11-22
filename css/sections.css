@@ -111,3 +111,26 @@
   .section--ambalan .member-photo{width:72px;height:90px}
   .section--ambalan .member-photo--lead{width:82px;height:104px}
 }
+
+
+/* Penyelarasan akhir struktur: kartu anggota seimbang tanpa ruang kosong. */
+.section--ambalan .ambalan-card{display:flex;flex-direction:column}
+.section--ambalan .org-chart{flex:1}
+.section--ambalan .person-grid--departments{column-gap:12px;row-gap:13px}
+.section--ambalan .department-card{
+  border-color:#e8e2d5;border-radius:17px;
+  box-shadow:0 3px 12px rgba(24,63,50,.045);
+}
+.section--ambalan .department-card>.person__role{
+  display:flex;min-height:38px;align-items:center;justify-content:center;
+}
+.section--ambalan .department-members li.member-item{height:100%}
+.section--ambalan .member-name{max-width:22ch}
+@media(max-width:740px){
+  .section--ambalan .ambalan-grid{gap:18px}
+  .section--ambalan .org-chart{padding-top:20px}
+}
+@media(max-width:480px){
+  .section--ambalan .person-grid--departments{column-gap:9px;row-gap:11px}
+  .section--ambalan .member-name{font-size:.7rem;max-width:24ch}
+}
