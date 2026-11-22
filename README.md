@@ -17,7 +17,7 @@ Kemudian buka `http://localhost:8000`.
 - **Beranda:** banner kegiatan, identitas Prasmafista, slogan, dan potret pelantikan Bantara.
 - **Profil:** pangkalan, nomor Gudep, pengertian Gerakan Pramuka, Gugus Depan, dan Ambalan beserta tautan rujukan.
 - **Nilai:** visi dan misi Dewan Ambalan Al-Fatih (putra) dan Rasuna Said (putri).
-- **Struktur:** susunan Dewan Ambalan Al-Fatih dan Rasuna Said. Nama yang belum tersedia ditandai secara eksplisit; foto pengurus belum ditampilkan.
+- **Struktur:** susunan Dewan Ambalan Al-Fatih dan Rasuna Said. Setiap posisi memiliki slot foto lingkaran sementara; nama yang belum tersedia tetap ditandai secara eksplisit.
 - **Dokumentasi:** dua foto dengan lightbox, navigasi foto, dan dukungan keyboard.
 
 ## Perilaku interaktif
@@ -44,6 +44,7 @@ Kemudian buka `http://localhost:8000`.
 | Navigasi dan scroll-spy | `js/navigation.js` |
 | Animasi kemunculan konten | `js/reveal.js` |
 | Lightbox dokumentasi | `js/lightbox.js` |
+| Template foto anggota dan panduan nama file | `assets/images/member-placeholder.svg`, `assets/images/anggota/README.md` |
 | Inisialisasi halaman | `js/main.js` |
 
 ## Sumber dan batas data
