@@ -1,6 +1,6 @@
 # Prasmafista · Gugus Depan 26.111–26.112
 
-Website satu halaman untuk Gerakan Pramuka SMA Al-Fityan School Tangerang. Dibangun menggunakan HTML, CSS, dan JavaScript murni, tanpa framework, dependensi eksternal, atau proses build. Dirancang agar tetap ringan untuk perangkat lama.
+Website satu halaman Gerakan Pramuka SMA Al-Fityan School Tangerang. Dibangun dengan HTML, CSS, dan JavaScript murni tanpa framework atau proses build. Tipografi utama menggunakan Grandstander dari Google Fonts; jika font daring tidak tersedia, browser memakai font sistem sebagai fallback.
 
 ## Menjalankan situs
 
@@ -14,37 +14,38 @@ Kemudian buka `http://localhost:8000`.
 
 ## Isi halaman
 
-- **Beranda:** foto banner kegiatan, identitas Prasmafista, slogan, dan foto pelantikan Bantara dalam bingkai emas.
-- **Profil:** pangkalan, nomor Gudep, pengertian Gerakan Pramuka, Gugus Depan, dan Ambalan dengan tautan sumber.
-- **Nilai:** rumusan visi dan misi editorial untuk pengenalan; sesuaikan dengan dokumen resmi bila tersedia.
-- **Struktur:** dua format terpisah untuk Ambalan Al-Fatih (putra / Gudep 26.111) dan Rasuna Said (putri / Gudep 26.112). Foto dan nama pengurus masih berupa slot karena daftar resminya belum diberikan.
-- **Dokumentasi:** dua foto yang dikirim pengelola, dengan lightbox dan navigasi keyboard.
+- **Beranda:** banner kegiatan, identitas Prasmafista, slogan, dan potret pelantikan Bantara.
+- **Profil:** pangkalan, nomor Gudep, pengertian Gerakan Pramuka, Gugus Depan, dan Ambalan beserta tautan rujukan.
+- **Nilai:** visi dan misi Dewan Ambalan Al-Fatih (putra) dan Rasuna Said (putri).
+- **Struktur:** susunan Dewan Ambalan Al-Fatih dan Rasuna Said. Nama yang belum tersedia ditandai secara eksplisit; foto pengurus belum ditampilkan.
+- **Dokumentasi:** dua foto dengan lightbox, navigasi foto, dan dukungan keyboard.
 
 ## Perilaku interaktif
 
-- Animasi pembuka dapat dilewati dengan klik/ketukan di area animasi atau tombol `Escape`, `Enter`, dan `Spasi`. Tidak ada tombol lewati khusus.
-- Header menampilkan foto saat berada di bagian atas lalu beralih ke warna hijau solid ketika halaman digulir.
-- Cincin pada logo menampilkan progres gulir. Klik logo saat halaman sedang digulir akan kembali ke atas; klik ketika berada di bagian atas akan membuka Instagram `@prasmafista`.
-- Foto dokumentasi bisa dibuka, dipindah, dan ditutup dengan keyboard.
-- Animasi menghormati pengaturan `prefers-reduced-motion`.
+- Animasi pembuka dapat dilewati dengan klik/ketukan atau tombol `Escape`, `Enter`, dan `Spasi`.
+- Navigasi bagian menggunakan scroll halus dan penanda menu aktif sesuai posisi halaman.
+- Header berwarna cokelat pada posisi atas, lalu berubah menjadi warna terang ketika halaman digulir.
+- Cincin di sekeliling logo menunjukkan progres gulir. Klik logo ketika halaman digulir akan kembali ke atas; klik saat berada di posisi atas membuka Instagram `@prasmafista`.
+- Elemen konten muncul bertahap ketika memasuki area layar.
+- Foto dokumentasi dapat dibuka, dipindah dengan tombol panah, dan ditutup dengan `Escape`.
+- Animasi dan scroll menghormati pengaturan `prefers-reduced-motion`.
 
 ## File yang sering diubah
 
 | Kebutuhan | Lokasi |
 |---|---|
-| Profil, slogan, isi informasi | `index.html` |
-| Nama, jabatan, dan foto pengurus kedua ambalan | `index.html`, bagian `id="struktur"` |
-| Foto utama | `assets/images/pelantikan-bantara.webp` |
-| Banner atas | `assets/images/header-banner.jpeg` |
-| Warna, layout, dan responsivitas | `css/base.css`, `css/header.css`, `css/sections.css` |
-| Perilaku logo dan header | `js/header.js` |
+| Profil, slogan, visi-misi, dan struktur | `index.html` |
+| Foto banner | `assets/images/header-banner.jpeg` |
+| Potret pelantikan Bantara | `assets/images/pelantikan-bantara.webp` |
+| Logo dan favicon | `assets/images/gudepalfit.webp`, `assets/images/gudepalfit.png` |
+| Warna, tipografi, dan layout | `css/base.css`, `css/header.css`, `css/sections.css` |
 | Animasi pembuka | `js/intro.js` |
-| Lightbox foto | `js/lightbox.js` |
+| Perilaku header dan logo | `js/header.js` |
+| Navigasi dan scroll-spy | `js/navigation.js` |
+| Animasi kemunculan konten | `js/reveal.js` |
+| Lightbox dokumentasi | `js/lightbox.js` |
+| Inisialisasi halaman | `js/main.js` |
 
 ## Sumber dan batas data
 
-Definisi umum kepramukaan merujuk pada situs Kwartir Nasional Gerakan Pramuka dan dokumen AD/ART/Jukran yang ditautkan pada halaman. Informasi lokal seperti slogan, nama ambalan, nomor Gudep, serta akun Instagram mengikuti data yang diberikan pengelola. Situs Instagram tidak menyediakan kontennya untuk diverifikasi secara lengkap saat proyek disusun, sehingga tidak ada nama pengurus atau prestasi yang dibuat-buat.
-
-
-### Tipografi dan header (pembaruan)
-Font global menggunakan Grandstander melalui Google Fonts; diperlukan koneksi internet agar font termuat. Header memakai warna hijau solid yang senada dengan panel Profil, wordmark dan logo lebih besar di bagian atas, lalu mengecil saat halaman digulir. Caption foto utama: **Pelantikan Bantara 2026**.
+Definisi umum kepramukaan merujuk pada situs Kwartir Nasional Gerakan Pramuka dan dokumen AD/ART/Jukran yang ditautkan pada halaman. Informasi lokal—termasuk slogan, nama ambalan, nomor Gudep, visi-misi, dan susunan pengurus—mengikuti data yang disampaikan pengelola. Bagian yang belum memiliki data ditandai agar tidak menampilkan informasi rekaan.
